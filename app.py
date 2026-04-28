@@ -41,7 +41,7 @@ def average_education(country, start_year, end_year):
    For example to find the stats for France in years between 2000 to 2005, enter http://127.0.0.1:PORT/schooling/France/2000/2020
    '''
    if start_year > end_year:
-       return "Please input approriate year range."
+       return "Please input appropriate year range."
   
    country_name = country.replace('-', ' ')
 
@@ -50,8 +50,9 @@ def average_education(country, start_year, end_year):
 
 
    if not data:
-       return f"No schooling data found for '{country_name}' between {start_year} and {end_year}."
-  
+       return f"No data found for '{country_name}' between {start_year} and {end_year}."
+   
+   
    result = f"Average years of schooling in {country_name}:\n"
 
    for row in data:
