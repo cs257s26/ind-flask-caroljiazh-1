@@ -68,3 +68,5 @@ def main():
     print(country_avg_schooling(connection, 'France', 2015, 2020))
     print(top_country_year(connection, 2020, 5))
     connection.close()
+
+main()
