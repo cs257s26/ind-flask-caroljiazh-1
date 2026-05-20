@@ -69,4 +69,5 @@ def main():
     print(top_country_year(connection, 2020, 5))
     connection.close()
 
-main()
+if __name__ == '__main__':
+    main()
